@@ -1,0 +1,15 @@
+@import "../../../SCSS/base";
+@import "../../../SCSS/mixin";
+
+.about {
+  & p {
+    text-align: left;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: $color-text;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+}

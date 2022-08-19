@@ -1,0 +1,14 @@
+.btn {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: rgb(107, 48, 48);
+  transition: all 0.3s ease-in;
+  font-size: 1.6rem;
+
+  &:hover {
+    color: rgb(107, 48, 48);
+    background-color: rgb(216, 191, 191);
+  }
+}

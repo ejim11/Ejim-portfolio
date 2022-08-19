@@ -1,0 +1,48 @@
+@import "../../../../SCSS/base";
+
+.project-item {
+  border-radius: 1.2rem;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba($color-text, 0.1);
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  & h3 {
+    font-size: 2rem;
+    color: $color-light-blue;
+    margin: 1rem 0;
+  }
+
+  &-st {
+    font-size: 2rem;
+    color: $color-light-blue;
+  }
+
+  &-text {
+    font-size: 1.7rem;
+    margin: 0 1.5rem 1rem;
+  }
+
+  &-stack-box {
+    display: flex;
+    color: rgb(216, 191, 191);
+    font-size: 1.7rem;
+    justify-content: center;
+    padding: 2rem 0;
+
+    & p {
+      margin: 0 1rem;
+    }
+  }
+
+  &-btns {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+}

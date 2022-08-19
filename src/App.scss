@@ -1,0 +1,64 @@
+@import "./SCSS/base";
+@import "./SCSS/mixin";
+/* general reset settings */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 87.5%; //1rem= 14px
+  @include respond(bigLaptop) {
+    font-size: 75%; //1rem= 12px
+  }
+
+  @include respond(laptop) {
+    font-size: 62.5%; //1rem= 10px
+  }
+  @include respond(tablet) {
+    font-size: 56.25%; //1rem= 9px
+  }
+}
+
+body {
+  background-color: $color-bg;
+  color: #fff;
+  font-family: $font-display;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba($color-bg, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.svg-animation {
+  width: 40%;
+
+  @include respond(miniTab) {
+    display: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}

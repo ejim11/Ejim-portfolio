@@ -1,0 +1,16 @@
+@import "../../../SCSS/base";
+
+.icons {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-light-blue;
+  }
+}

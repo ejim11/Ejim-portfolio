@@ -1,0 +1,91 @@
+@import "../../SCSS/base";
+@import "../../SCSS/mixin";
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0 2rem;
+  width: 85%;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 2.5rem;
+    margin-right: 3rem;
+  }
+
+  & .menu-icon,
+  .close-icon {
+    display: none;
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor: pointer;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  & .menu-icon {
+    margin-right: 1rem;
+  }
+
+  & .close-icon {
+    margin: 3rem 3rem 6rem auto;
+  }
+
+  & nav {
+    @include respond(phone) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgb(67, 50, 161);
+      height: 100vh;
+      transition: all 0.3s ease;
+    }
+    & ul {
+      display: flex;
+      list-style-type: none;
+
+      @include respond(phone) {
+        flex-direction: column;
+      }
+
+      & li {
+        @include respond(phone) {
+          text-align: center;
+        }
+        & a {
+          display: block;
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+          color: $color-primary;
+          font-size: 1.8rem;
+          transition: all 0.3s ease-in;
+
+          &:hover {
+            color: $color-light-blue;
+          }
+        }
+      }
+    }
+  }
+
+  & .media-links {
+    margin-left: auto;
+  }
+}
+
+.display-menu {
+  @include respond(phone) {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.hide-menu {
+  @include respond(phone) {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}

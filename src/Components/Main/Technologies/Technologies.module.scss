@@ -1,0 +1,56 @@
+@import "../../../SCSS/base";
+@import "../../../SCSS/mixin";
+
+.tech-container {
+  width: 100%;
+
+  &-paragraph {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: $color-text;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
+  & .tech-stack-box {
+    display: flex;
+    margin: 3rem 0;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &-item {
+      margin: 1rem 5rem 0 0;
+
+      @include respond(phone) {
+        margin: 1.5rem 0;
+        text-align: center;
+      }
+
+      & .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      & h3 {
+        font-size: 2.5rem;
+      }
+      & p {
+        font-size: 1.8rem;
+        margin: 1rem 0 0;
+      }
+
+      & ul {
+        list-style-type: none;
+
+        & li {
+          font-size: 1.8rem;
+          margin: 0.5rem 0 0;
+          color: $color-text;
+        }
+      }
+    }
+  }
+}

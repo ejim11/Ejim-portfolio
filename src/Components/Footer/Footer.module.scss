@@ -1,0 +1,32 @@
+@import "../../SCSS/base";
+
+.footer {
+  padding: 4rem 0;
+  &-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    &-hr {
+      height: 1px;
+      flex: 1;
+      background-color: $color-text;
+    }
+
+    &-name {
+      font-size: 2.5rem;
+      margin: 0 1rem;
+    }
+  }
+
+  & p {
+    text-align: center;
+    font-size: 1.7rem;
+    color: $color-text;
+  }
+
+  &-copyright {
+    margin: 6rem 0 0;
+  }
+}

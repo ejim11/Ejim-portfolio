@@ -1,0 +1,13 @@
+@import "../../../SCSS/mixin";
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  padding: 6rem 8rem;
+  grid-row-gap: 6rem;
+  grid-column-gap: 12rem;
+
+  @include respond(phone) {
+    padding: 6rem 2rem;
+  }
+}
