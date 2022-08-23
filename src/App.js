@@ -9,8 +9,8 @@ function App() {
     <>
       <Layout />
       <TawkMessengerReact
-        propertyId="62f887df54f06e12d88e8553"
-        widgetId="1gartncs8"
+        propertyId="6304ea8b37898912e964ae66"
+        widgetId="1gb5j8d4u"
         ref={tawkMessengerRef}
       />
     </>
