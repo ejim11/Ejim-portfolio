@@ -1,0 +1,10 @@
+@import "../../SCSS/mixin";
+
+.inner-box {
+    display: flex;
+
+    @include respond(miniTab) {
+        flex-direction: column;
+    }
+
+}

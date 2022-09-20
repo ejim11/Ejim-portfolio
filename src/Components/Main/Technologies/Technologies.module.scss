@@ -34,9 +34,11 @@
         width: 2.5rem;
         height: 2.5rem;
       }
+
       & h3 {
         font-size: 2.5rem;
       }
+
       & p {
         font-size: 1.8rem;
         margin: 1rem 0 0;
@@ -52,5 +54,14 @@
         }
       }
     }
+  }
+}
+
+
+.tech-sec {
+  width: 50%;
+
+  @include respond(miniTab) {
+    width: 100%;
   }
 }

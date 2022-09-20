@@ -28,6 +28,7 @@ const Header = () => {
   const item = {
     hide: { opacity: 0, y: "-100%" },
     show: { opacity: 1, y: 0 },
+    transition: { duration: 0.5, ease: "easeIn" },
   };
 
   return (
@@ -43,24 +44,15 @@ const Header = () => {
       >
         <FaTimes className={classes["close-icon"]} />
         <motion.ul variants={list} initial={"hide"} animate={"show"}>
-          <motion.li
-            variants={item}
-            transition={{ duration: 1, ease: "easeIn" }}
-          >
+          <motion.li variants={item} transition={"transition"}>
             <Link to={"#about"} component={<AboutSection />}>
               About
             </Link>
           </motion.li>
-          <motion.li
-            variants={item}
-            transition={{ duration: 1, ease: "easeIn" }}
-          >
+          <motion.li variants={item} transition={"transition"}>
             <Link to={"#technologies"}>Technologies</Link>
           </motion.li>
-          <motion.li
-            variants={item}
-            transition={{ duration: 1, ease: "easeIn" }}
-          >
+          <motion.li variants={item} transition={"transition"}>
             <Link to={"#projects"}>Projects</Link>
           </motion.li>
         </motion.ul>

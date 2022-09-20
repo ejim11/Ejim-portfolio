@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 const SvgAnimation = () => {
   return (
-    <div className={"svg-animation"}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      className={"svg-animation"}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -318,7 +325,7 @@ const SvgAnimation = () => {
           </g>
         </g>
       </svg>
-    </div>
+    </motion.div>
   );
 };
 

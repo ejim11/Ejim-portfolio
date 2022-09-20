@@ -4,6 +4,7 @@ import countriesImg from "../../../../Asset/countries.jpg";
 import spaceImg from "../../../../Asset/space.jpg";
 import urlShorternerImg from "../../../../Asset/urlShorterner.jpg";
 import todoImg from "../../../../Asset/todo.jpg";
+import { motion } from "framer-motion";
 
 const ProjectsData = [
   {
@@ -46,7 +47,14 @@ const ProjectsData = [
 
 const ProjectItems = () => {
   const projectsList = ProjectsData.map((item) => (
-    <div key={item.id} className={classes["project-item"]}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true }}
+      key={item.id}
+      className={classes["project-item"]}
+    >
       <div>
         <img src={item.img} alt={item.title} />
       </div>
@@ -62,7 +70,7 @@ const ProjectItems = () => {
         <ButtonLink to={item.visit}>Visit</ButtonLink>
         <ButtonLink to={item.source}>Source</ButtonLink>
       </div>
-    </div>
+    </motion.div>
   ));
 
   return <>{projectsList}</>;

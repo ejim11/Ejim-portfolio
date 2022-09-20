@@ -13,3 +13,12 @@
     }
   }
 }
+
+
+.about-sec {
+  width: 50%;
+
+  @include respond(miniTab) {
+    width: 100%;
+  }
+}

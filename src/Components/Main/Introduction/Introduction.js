@@ -9,7 +9,7 @@ const Introduction = () => {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeIn" }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
           className={classes["intro-text-greeting"]}
         >
           Hello, I am
@@ -18,14 +18,14 @@ const Introduction = () => {
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeIn" }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
         >
           Front-End developer
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: "30" }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeIn" }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
           className={classes["intro-text-text"]}
         >
           I am a Front-end developer building interactive, scalable and
@@ -34,7 +34,7 @@ const Introduction = () => {
         <motion.p
           initial={{ opacity: 0, y: "30" }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeIn", delay: 0.5 }}
+          transition={{ duration: 0.5, ease: "easeIn", delay: 0.5 }}
           className={classes["intro-text-text"]}
         >
           I am competent in building small full-stack apps using ReactJs/NextJs

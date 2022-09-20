@@ -2,20 +2,33 @@ import Card from "../../UI/card/Card";
 import classes from "./Technologies.module.scss";
 import { FaDatabase } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Technologies = () => {
   return (
-    <section id="technologies">
+    <section id="technologies" className={classes["tech-sec"]}>
       <Card
         heading={"Tech Stack"}
         className={classes["tech-stack"]}
         container={classes["tech-container"]}
       >
-        <p className={classes["tech-container-paragraph"]}>
+        <motion.p
+          initial={{ opacity: 0, y: "30" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className={classes["tech-container-paragraph"]}
+        >
           I've worked with a few technologies in the front-end and back-end
           development field. Some of the tools I'm familiar with include:
-        </p>
-        <div className={classes["tech-stack-box"]}>
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, x: -150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className={classes["tech-stack-box"]}
+        >
           <div className={classes["tech-stack-box-item"]}>
             <FaReact className={classes.icon} />
             <h3>Front-End</h3>
@@ -31,15 +44,21 @@ const Technologies = () => {
               <li>Next Js</li>
             </ul>
           </div>
-          <div className={classes["tech-stack-box-item"]}>
+          <motion.div
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeIn", delay: 0.2 }}
+            viewport={{ once: true }}
+            className={classes["tech-stack-box-item"]}
+          >
             <FaDatabase className={classes.icon} />
             <h3>Back-End</h3>
             <p>Experience with :</p>
             <ul>
               <li>Firebase</li>
             </ul>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </Card>
     </section>
   );
