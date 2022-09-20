@@ -5,6 +5,7 @@ import MediaLinks from "../UI/MediaLinks/MediaLinks";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -12,6 +13,23 @@ const Header = () => {
   const displayMenuHandler = () => {
     setMenuVisible((prevState) => !prevState);
   };
+
+  const list = {
+    hide: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        // when: "beforeChildren",
+        staggerChildren: 0.6,
+      },
+    },
+  };
+
+  const item = {
+    hide: { opacity: 0, y: "-100%" },
+    show: { opacity: 1, y: 0 },
+  };
+
   return (
     <header className={classes.header}>
       <HiOutlineMenuAlt2
@@ -24,19 +42,19 @@ const Header = () => {
         className={menuVisible ? classes["display-menu"] : classes["hide-menu"]}
       >
         <FaTimes className={classes["close-icon"]} />
-        <ul>
-          <li>
+        <motion.ul variants={list} initial={"hide"} animate={"show"}>
+          <motion.li variants={item} transitiom={{ duration: 1.5 }}>
             <Link to={"#about"} component={<AboutSection />}>
               About
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={item} transitiom={{ duration: 1.5 }}>
             <Link to={"#technologies"}>Technologies</Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={item} transitiom={{ duration: 1.5 }}>
             <Link to={"#projects"}>Projects</Link>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
       </nav>
       <div className={classes["media-links"]}>
         <MediaLinks />
