@@ -43,15 +43,24 @@ const Header = () => {
       >
         <FaTimes className={classes["close-icon"]} />
         <motion.ul variants={list} initial={"hide"} animate={"show"}>
-          <motion.li variants={item} transitiom={{ duration: 1.5 }}>
+          <motion.li
+            variants={item}
+            transition={{ duration: 2, ease: "easeIn" }}
+          >
             <Link to={"#about"} component={<AboutSection />}>
               About
             </Link>
           </motion.li>
-          <motion.li variants={item} transitiom={{ duration: 1.5 }}>
+          <motion.li
+            variants={item}
+            transition={{ duration: 2, ease: "easeIn" }}
+          >
             <Link to={"#technologies"}>Technologies</Link>
           </motion.li>
-          <motion.li variants={item} transitiom={{ duration: 1.5 }}>
+          <motion.li
+            variants={item}
+            transition={{ duration: 2, ease: "easeIn" }}
+          >
             <Link to={"#projects"}>Projects</Link>
           </motion.li>
         </motion.ul>
