@@ -45,7 +45,7 @@ const Header = () => {
         <motion.ul variants={list} initial={"hide"} animate={"show"}>
           <motion.li
             variants={item}
-            transition={{ duration: 2, ease: "easeIn" }}
+            transition={{ duration: 1, ease: "easeIn" }}
           >
             <Link to={"#about"} component={<AboutSection />}>
               About
@@ -53,13 +53,13 @@ const Header = () => {
           </motion.li>
           <motion.li
             variants={item}
-            transition={{ duration: 2, ease: "easeIn" }}
+            transition={{ duration: 1, ease: "easeIn" }}
           >
             <Link to={"#technologies"}>Technologies</Link>
           </motion.li>
           <motion.li
             variants={item}
-            transition={{ duration: 2, ease: "easeIn" }}
+            transition={{ duration: 1, ease: "easeIn" }}
           >
             <Link to={"#projects"}>Projects</Link>
           </motion.li>
