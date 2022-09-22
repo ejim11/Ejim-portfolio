@@ -2,6 +2,7 @@
 
 .inner-box {
     display: flex;
+    padding: 0 5rem;
 
     @include respond(miniTab) {
         flex-direction: column;

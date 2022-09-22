@@ -19,6 +19,17 @@ const Card = (props) => {
       >
         {props.heading}
       </motion.h2>
+      {props.text && (
+        <motion.p
+          initial={{ opacity: 0, y: "30" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className={classes.text}
+        >
+          {props.text}
+        </motion.p>
+      )}
       <div className={props.container}>{props.children}</div>
     </div>
   );

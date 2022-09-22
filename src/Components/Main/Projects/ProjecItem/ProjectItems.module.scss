@@ -24,14 +24,14 @@
   }
 
   &-text {
-    font-size: 1.7rem;
+    font-size: $font-text;
     margin: 0 1.5rem 1rem;
   }
 
   &-stack-box {
     display: flex;
     color: rgb(216, 191, 191);
-    font-size: 1.7rem;
+    font-size: $font-text;
     justify-content: center;
     padding: 2rem 0;
 

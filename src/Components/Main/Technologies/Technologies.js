@@ -19,8 +19,9 @@ const Technologies = () => {
           viewport={{ once: true }}
           className={classes["tech-container-paragraph"]}
         >
-          I've worked with a few technologies in the front-end and back-end
-          development field. Some of the tools I'm familiar with include:
+          Through my studies, I've gained a solid understanding of computer and
+          web development concepts, and have dedicated a lot of my free time to
+          apply these concepts to real-world scenarios and applications.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, x: -150 }}

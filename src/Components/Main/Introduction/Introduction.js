@@ -20,7 +20,7 @@ const Introduction = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeIn" }}
         >
-          Front-End developer
+          Front-End Developer
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: "30" }}
@@ -28,17 +28,9 @@ const Introduction = () => {
           transition={{ duration: 0.5, ease: "easeIn" }}
           className={classes["intro-text-text"]}
         >
-          I am a Front-end developer building interactive, scalable and
-          responsive Web apps using ReactJs.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: "30" }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.5 }}
-          className={classes["intro-text-text"]}
-        >
-          I am competent in building small full-stack apps using ReactJs/NextJs
-          and Firebase.
+          I build things, beautiful things! I'm very passionate about software
+          development and it's real world applications. I'm detail oriented and
+          can create rich web applications with complex user interfaces.
         </motion.p>
       </div>
       <SvgAnimation />

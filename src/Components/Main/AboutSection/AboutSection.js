@@ -16,9 +16,8 @@ const AboutSection = () => {
           transition={{ duration: 0.5, ease: "easeIn" }}
           viewport={{ once: true }}
         >
-          I build things, beautiful things! I'm very passionate about software
-          development and it's real world applications. I'm detail oriented and
-          can create rich web applications with complex user interfaces.
+          I'm a young lad currently advancing my knowledge in web development
+          and design.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: "30" }}
@@ -26,9 +25,19 @@ const AboutSection = () => {
           transition={{ duration: 0.5, ease: "easeIn", delay: 0.5 }}
           viewport={{ once: true }}
         >
-          I have over 2 year of experience with front-end development. I'm
-          competent in libraries and framework such as React Js, Redux and Next
-          Js, as well as Firebase which is used for back-end development.
+          As I've grown as a developer, I've worked alongside senior designers
+          and developers who have helped raise my standards for what's expected
+          of any application.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: "30" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn", delay: 0.8 }}
+          viewport={{ once: true }}
+        >
+          THrough these experiences, I've had the opportunity to create
+          memorable products that are not only enjoyable to use but are written
+          in code that's maintainable and easy to understand.
         </motion.p>
       </Card>
     </section>
