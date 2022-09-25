@@ -35,9 +35,20 @@ const AboutSection = () => {
           transition={{ duration: 0.5, ease: "easeIn", delay: 0.8 }}
           viewport={{ once: true }}
         >
-          THrough these experiences, I've had the opportunity to create
+          Through these experiences, I've had the opportunity to create
           memorable products that are not only enjoyable to use but are written
           in code that's maintainable and easy to understand.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: "30" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn", delay: 1 }}
+          viewport={{ once: true }}
+        >
+          Here is a link to my CV:{" "}
+          <a href={require("../../../files/Ejim Favour Tech CV.pdf")} download>
+            Download CV
+          </a>
         </motion.p>
       </Card>
     </section>
