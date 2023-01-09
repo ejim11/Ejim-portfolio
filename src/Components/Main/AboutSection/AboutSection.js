@@ -13,7 +13,7 @@ const AboutSection = () => {
         <motion.p
           initial={{ opacity: 0, y: "30" }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           viewport={{ once: true }}
         >
           I'm a young lad currently advancing my knowledge in web development
@@ -22,7 +22,7 @@ const AboutSection = () => {
         <motion.p
           initial={{ opacity: 0, y: "30" }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.5 }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
           viewport={{ once: true }}
         >
           As I've grown as a developer, I've worked alongside senior designers
@@ -32,7 +32,7 @@ const AboutSection = () => {
         <motion.p
           initial={{ opacity: 0, y: "30" }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.8 }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
           viewport={{ once: true }}
         >
           Through these experiences, I've had the opportunity to create
@@ -42,11 +42,11 @@ const AboutSection = () => {
         <motion.p
           initial={{ opacity: 0, y: "30" }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 1 }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.3 }}
           viewport={{ once: true }}
         >
           Here is a link to my CV:{" "}
-          <a href={require("../../../files/Ejim Favour Tech CV.pdf")} download>
+          <a href={require("../../../files/Ejim Favour  CV.pdf")} download>
             Download CV
           </a>
         </motion.p>
