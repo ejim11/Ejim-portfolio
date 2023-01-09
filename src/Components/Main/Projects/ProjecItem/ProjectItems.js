@@ -50,7 +50,7 @@ const ProjectItems = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       viewport={{ once: true }}
       key={item.id}
       className={classes["project-item"]}

@@ -9,7 +9,7 @@ const Introduction = () => {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           className={classes["intro-text-greeting"]}
         >
           Hello, I am
@@ -18,14 +18,14 @@ const Introduction = () => {
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
         >
           Front-End Developer
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: "30" }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           className={classes["intro-text-text"]}
         >
           I build things, beautiful things! I'm very passionate about software
