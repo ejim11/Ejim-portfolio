@@ -46,7 +46,11 @@ const AboutSection = () => {
           viewport={{ once: true }}
         >
           Here is a link to my CV:{" "}
-          <a href={require("../../../files/Ejim Favour  CV.pdf")} download>
+          <a
+            href={require("../../../files/Ejim Favour CV.pdf")}
+            target="blank"
+            download
+          >
             Download CV
           </a>
         </motion.p>

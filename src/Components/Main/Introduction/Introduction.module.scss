@@ -10,7 +10,8 @@
   align-items: center;
 
   @include respond(miniTab) {
-    height: 60vh;
+    flex-direction: column;
+    height: max-content;
   }
 
   &-text {

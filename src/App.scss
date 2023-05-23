@@ -58,6 +58,8 @@ body {
   width: 40%;
 
   @include respond(miniTab) {
+    // width: 80%;
+    // margin: 0 auto;
     display: none;
   }
 }

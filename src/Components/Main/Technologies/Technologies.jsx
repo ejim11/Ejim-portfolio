@@ -42,7 +42,6 @@ const Technologies = () => {
               <li>Javascript</li>
               <li>Typescript</li>
               <li>React Js</li>
-              <li>Unit tests (JEST)</li>
               <li>Next Js</li>
             </ul>
           </div>
@@ -58,6 +57,7 @@ const Technologies = () => {
             <p>Experience with :</p>
             <ul>
               <li>Firebase</li>
+              <li>Solidity</li>
             </ul>
           </motion.div>
         </motion.div>

@@ -7,42 +7,81 @@
   padding-bottom: 3rem;
   box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba($color-text, 0.1);
   transition: all 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
 
   &:hover {
     transform: scale(1.02);
   }
 
+  &-img {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   & h3 {
     font-size: 2rem;
     color: $color-light-blue;
-    margin: 1rem 0;
+    margin: 3rem 0 1rem;
   }
 
-  &-st {
-    font-size: 2rem;
-    color: $color-light-blue;
-  }
+
 
   &-text {
     font-size: $font-text;
     margin: 0 1.5rem 1rem;
   }
 
+  &-stack-container {
+    margin: 2rem 0;
+
+  }
+
+  &-st {
+    font-size: 1.8rem;
+    color: $color-light-blue;
+  }
+
   &-stack-box {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     color: rgb(216, 191, 191);
     font-size: $font-text;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 1rem;
 
     & p {
-      margin: 0 1rem;
+      margin: 1rem;
+      border: 1px solid rgb(107, 48, 48);
+      padding: .5rem 1rem;
+      border-radius: 8px;
     }
   }
+
+
 
   &-btns {
     display: flex;
     justify-content: space-around;
-    margin: 1rem 0;
+    margin: auto 0 1rem;
+
+
+    & p {
+      border-radius: 8px;
+      text-decoration: none;
+      display: block;
+      padding: 1rem 2rem;
+      color: #fff;
+      background-color: rgb(107, 48, 48);
+      transition: all 0.3s ease-in;
+      font-size: 1.6rem;
+    }
   }
 }

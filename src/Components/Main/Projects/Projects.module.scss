@@ -8,6 +8,6 @@
   grid-column-gap: 12rem;
 
   @include respond(phone) {
-    padding: 6rem 2rem;
+    padding: 6rem 0rem;
   }
 }
