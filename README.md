@@ -30,7 +30,7 @@
     <img src="/src/Asset/logo.png" alt="Logo" >
   </a>
 
-<h3 align="center">Blockview</h3>
+<h3 align="center">Ejim's Portfolio</h3>
 
   <p align="center">
     My portfolio website
@@ -73,8 +73,13 @@ My portfolio site. It displays my major projects and also contains links to my m
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+- You can click on the contact me button to send a mail to me.
 
 [![Mail me][mail-me]](./src/Asset/contact-me.png)
+
+- You can visit projects and view their source code.
+- Also to have a live chat with me, you can use the chat box.
+
 [![Projects][projects]](./src/Asset/projects.png)
 
 
