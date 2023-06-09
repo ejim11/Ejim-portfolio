@@ -20,7 +20,7 @@ const Introduction = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeIn" }}
         >
-          Front-End Developer
+          Front-End Engineer
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: "30" }}
