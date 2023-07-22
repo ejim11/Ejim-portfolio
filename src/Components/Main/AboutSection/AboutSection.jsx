@@ -16,8 +16,8 @@ const AboutSection = () => {
           transition={{ duration: 0.3, ease: "easeIn" }}
           viewport={{ once: true }}
         >
-          I'm a young lad currently advancing my knowledge in web development
-          and design.
+          I'm a young lad currently advancing my knowledge in web app
+          development and smart contracts.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: "30" }}
@@ -25,8 +25,8 @@ const AboutSection = () => {
           transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
           viewport={{ once: true }}
         >
-          As I've grown as a developer, I've worked alongside senior designers
-          and developers who have helped raise my standards for what's expected
+          As I've grown as an engineer, I've worked alongside senior designers
+          and engineers who have helped raise my standards for what's expected
           of any application.
         </motion.p>
         <motion.p

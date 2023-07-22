@@ -20,7 +20,7 @@ const Introduction = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeIn" }}
         >
-          Front-End Engineer
+          Software Engineer
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: "30" }}
@@ -29,13 +29,19 @@ const Introduction = () => {
           className={classes["intro-text-text"]}
         >
           I build things, beautiful things! I'm very passionate about software
-          development and it's real world applications. I'm detail oriented and
+          engineering and it's real world applications. I'm detail oriented and
           can create rich web applications with complex user interfaces.
         </motion.p>
-        <motion.a href="mailto:favourejim56@gmail.com" target="blank" initial={{ opacity: 0, y: "30" }}
+        <motion.a
+          href="mailto:favourejim56@gmail.com"
+          target="blank"
+          initial={{ opacity: 0, y: "30" }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeIn" }}
-          className={classes["contact-me"]}>Contact Me</motion.a>
+          className={classes["contact-me"]}
+        >
+          Contact Me
+        </motion.a>
       </div>
       <SvgAnimation />
     </section>
